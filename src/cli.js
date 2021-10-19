@@ -1,8 +1,9 @@
 import readlineSync from 'readline-sync';
 
 const askName = () => {
-    const name = readlineSync.question('May I have your name? ');
-    console.log(`Hello, ${name}!`);
-}
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
+};
 
-export {askName};
+// eslint-disable-next-line import/prefer-default-export
+export { askName };
