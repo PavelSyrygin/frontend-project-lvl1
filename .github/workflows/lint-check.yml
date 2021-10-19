@@ -5,8 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: install
-        run: make install
+        run: |
+          make install
         env:
           CI: true
       - name: make-lint-step
-        run: make lint
+        run: |
+          make lint
