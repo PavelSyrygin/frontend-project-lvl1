@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 const maxRandomNumber = 99;
 const countQuestions = 3;
-const getRandomInt = () => Math.floor(Math.random() * maxRandomNumber);
+const getRandomInt = () => Math.floor(Math.random() * (maxRandomNumber - 1) + 1);
 // eslint-disable-next-line import/no-mutable-exports
 let playerName = '';
 
